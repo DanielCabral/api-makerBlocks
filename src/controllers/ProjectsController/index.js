@@ -32,6 +32,6 @@ module.exports={
                 name: "Teste",
                 xml,                
             });
-            return response.send("Ok");
+            return response.send(""+id);
     },
 };
