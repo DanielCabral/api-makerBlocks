@@ -28,35 +28,39 @@ module.exports = {
       useNullAsDefault: true
     },
     staging: {
-      client: 'postgresql',
+      client: 'mysql',
       connection: {
-        database: 'my_db',
-        user:     'username',
-        password: 'password'
+        host: 'db4free.net',
+        database: 'makerblocks',
+        user:     'makerblocks',
+        password: 'abc.1234'
       },
       pool: {
         min: 2,
         max: 10
       },
-      migrations: {
-        tableName: 'knex_migrations'
-      }
+      migrations:{
+          directory:"./src/database/migrations"
+      },
+      useNullAsDefault: true
     },
   
     production: {
-      client: 'postgresql',
+      client: 'mysql',
       connection: {
-        database: 'my_db',
-        user:     'username',
-        password: 'password'
+        host: 'db4free.net',
+        database: 'makerblocks',
+        user:     'makerblocks',
+        password: 'abc.1234'
       },
       pool: {
         min: 2,
         max: 10
       },
-      migrations: {
-        tableName: 'knex_migrations'
-      }
-    }
+      migrations:{
+          directory:"./src/database/migrations"
+      },
+      useNullAsDefault: true
+    },
   
   };
