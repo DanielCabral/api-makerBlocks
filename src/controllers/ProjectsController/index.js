@@ -4,20 +4,19 @@ const crypto=require('crypto');
 
 module.exports={
     async index (request,response) {
-        // const {page=1} = request.query;
-
-        // const [count]=await connection('incidents').count();
-
          const ongs=await connection('projects')
-        // .join("ongs", "ongs.id", "=", "incidents.ong_id")
-        // .limit(5)
-        // .offset((page-1)*5)
          .select(['projects.*']);
 
-        // response.header('X-Total-count',count['count(*)']); 
         return response.json(ongs);
-        //return response.send('Ok')
     },
+    async get (request,response) {
+        const {id}=request.params;
+        const ongs=await connection('projects')
+        .where({'id': id})
+        .select(['projects.*']);
+
+       return response.json(ongs);
+   },
     async create(request,response){
         const {xml}=request.body;
         console.log("Enter");

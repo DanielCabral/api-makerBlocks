@@ -10,6 +10,8 @@ router.get('/projects', ProjectsController.index);
 
 router.put('/project', ProjectsController.update);
 
+router.get('/project/:id', ProjectsController.get);
+
 router.get('/', (req,res) => {
     res.send('OK');
 });
