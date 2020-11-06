@@ -4,9 +4,12 @@ const ProjectsController=require('./controllers/ProjectsController');
 var router = express.Router();
 router.use(express.json());
 
-router.post('/projects',ProjectsController.create);
+router.post('/project',ProjectsController.create);
 
 router.get('/projects', ProjectsController.index);
+
+router.put('/project', ProjectsController.update);
+
 router.get('/', (req,res) => {
     res.send('OK');
 });
