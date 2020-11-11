@@ -18,12 +18,12 @@ module.exports={
        return response.json(ongs);
    },
     async create(request,response){
-        const {xml}=request.body;
+        const {name, xml}=request.body;
         console.log("Enter");
             // const ong_id=request.headers.authorization;
             // console.log(ong_id);
             const [id]= await connection('projects').insert({
-                name: "Teste",
+                name,
                 xml,                
             });
             return response.send(""+id);
