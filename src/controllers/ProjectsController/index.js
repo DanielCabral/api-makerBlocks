@@ -44,8 +44,21 @@ module.exports={
                 console.log(err);
                 return response.send("Erro");
                 return;         
-            }); 
+            });             
+    },
+    async delete(request,response){
+        const {id}=request.body;
+        console.log(id);
 
-            
+            await connection('projects').where({'id': id})
+            .del()
+            .then(function(numberOfUpdatedRows) {
+                if(numberOfUpdatedRows) {                   
+                    return response.send("Ok ");
+                }
+            }).catch(function(err){
+                console.log(err);
+                return response.send("Erro");     
+            });             
     },
 };
