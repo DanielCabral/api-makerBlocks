@@ -1,6 +1,9 @@
 const express=require('express');
 const routes=require('./routes.js');
 const cors=require('cors');
+
+const app=express();
+
 app.use((req, res, next) => {
 	//Qual site tem permissão de realizar a conexão, no exemplo abaixo está o "*" indicando que qualquer site pode fazer a conexão
     res.header("Access-Control-Allow-Origin", "*");
@@ -10,7 +13,6 @@ app.use((req, res, next) => {
     next();
 });
 
-const app=express();
 
 app.use(cors());
 
