@@ -58,7 +58,7 @@ module.exports={
                 }
             }).catch(function(err){
                 console.log(err);
-                return response.send("Erro");     
+                return response.send("Erro"+id);     
             });             
     },
 };
