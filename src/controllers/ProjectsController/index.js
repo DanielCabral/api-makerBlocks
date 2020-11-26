@@ -47,7 +47,7 @@ module.exports={
             });             
     },
     async delete(request,response){
-        const {id}=request.body;
+        const {id}=request.params;
         console.log(id);
 
             await connection('projects').where({'id': id})
