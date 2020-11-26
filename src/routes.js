@@ -16,7 +16,7 @@ router.post('/project',ProjectsController.create);
 
 router.put('/project', ProjectsController.update);
 
-router.delete('/project', ProjectsController.delete);
+router.delete('/project/:id', ProjectsController.delete);
 
 router.get('/project/:id', ProjectsController.get);
 
