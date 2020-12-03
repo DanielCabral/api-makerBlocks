@@ -13,10 +13,10 @@ module.exports = {
     development: {
       client: 'mysql',
       connection: {
-        host: 'db4free.net',
-        database: 'makerblocks',
-        user:     'makerblocks',
-        password: 'abc.1234'
+        host: 'us-cdbr-east-02.cleardb.com',
+        database: 'heroku_2b58cdacaab391e',
+        user:     'bb3f30639486b2',
+        password: '862c56b8'
       },
       pool: {
         min: 2,
@@ -30,10 +30,10 @@ module.exports = {
     staging: {
       client: 'mysql',
       connection: {
-        host: 'db4free.net',
-        database: 'makerblocks',
-        user:     'makerblocks',
-        password: 'abc.1234'
+        host: 'us-cdbr-east-02.cleardb.com',
+        database: 'heroku_2b58cdacaab391e',
+        user:     'bb3f30639486b2',
+        password: '862c56b8'
       },
       pool: {
         min: 2,
@@ -48,10 +48,10 @@ module.exports = {
     production: {
       client: 'mysql',
       connection: {
-        host: 'db4free.net',
-        database: 'makerblocks',
-        user:     'makerblocks',
-        password: 'abc.1234'
+        host: 'us-cdbr-east-02.cleardb.com',
+        database: 'heroku_2b58cdacaab391e',
+        user:     'bb3f30639486b2',
+        password: '862c56b8'
       },
       pool: {
         min: 2,
