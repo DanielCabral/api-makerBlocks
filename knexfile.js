@@ -14,7 +14,7 @@ module.exports = {
       client: 'mysql',
       connection: {
         host: 'us-cdbr-east-02.cleardb.com',
-        database: 'heroku_2b58cdacaab391e',
+        database: 'heroku_d3a9b580de36c15',
         user:     'bb3f30639486b2',
         password: '862c56b8'
       },
@@ -30,8 +30,9 @@ module.exports = {
     staging: {
       client: 'mysql',
       connection: {
+        //mysql://bb3f30639486b2:862c56b8@us-cdbr-east-02.cleardb.com/heroku_d3a9b580de36c15?reconnect=true
         host: 'us-cdbr-east-02.cleardb.com',
-        database: 'heroku_2b58cdacaab391e',
+        database: 'heroku_d3a9b580de36c15',
         user:     'bb3f30639486b2',
         password: '862c56b8'
       },
@@ -49,7 +50,7 @@ module.exports = {
       client: 'mysql',
       connection: {
         host: 'us-cdbr-east-02.cleardb.com',
-        database: 'heroku_2b58cdacaab391e',
+        database: 'heroku_d3a9b580de36c15',
         user:     'bb3f30639486b2',
         password: '862c56b8'
       },
